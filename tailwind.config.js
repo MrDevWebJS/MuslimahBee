@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     fontFamily:{
-      'playfair': [ 'Playfair', 'sans-serif' ],
-      'plaifairDSC': [ 'Playfair Display SC', 'sans-serif' ]
+      'montserrat': [ 'Montserrat', 'sans-serif' ],
+      'robotoCondensed': [ 'Roboto Condensed', 'sans-serif' ]
    },   
     extend: {},
   },
