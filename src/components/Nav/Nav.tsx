@@ -1,6 +1,6 @@
 import { clsx } from "clsx"
-import { navData } from "./dataNav"
-import { navSvg } from "./svgNav"
+import { navData } from "./data/dataNav"
+import { navSvg } from "./data/svgNav"
 import { FunctionComponent, useState } from "react"
 
 export const Nav: FunctionComponent = (): React.JSX.Element => {
@@ -40,7 +40,7 @@ export const Nav: FunctionComponent = (): React.JSX.Element => {
                             className={clsx("w-full h-full")}
                         >
                             <button className={clsx("w-full h-full text-neutral-700 hover:text-yellow-600 transition-colors transition-duration-300 font-robotoCondensed")}>
-                                {tab.tab}
+                                {tab.link}
                             </button>
                         </li>
                     ))
