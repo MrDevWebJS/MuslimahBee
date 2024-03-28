@@ -9,7 +9,7 @@ export const Header: FunctionComponent = (): React.JSX.Element => {
             relative flex justify-between items-center w-screen h-20 bg-pink-200 shadow-md
             sm:justify-between
         `)}>
-            <p 
+            <h1 
                 className={clsx("flex justify-start items-center p-1")}
             >
                 <img
@@ -18,7 +18,7 @@ export const Header: FunctionComponent = (): React.JSX.Element => {
                     alt="logo représentant les lettres 'm' et 'b' en majuscule avec une abeille"
                 />
                 <span className={clsx("text-neutral-700 font-montserrat font-bold text-2xl ml-2")}>MuslimahBee</span>
-            </p>
+            </h1>
             <Nav />
         </header>
     )

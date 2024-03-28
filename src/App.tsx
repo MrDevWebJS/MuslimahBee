@@ -1,13 +1,13 @@
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import './App.css'
 import { Header } from './components/Header/Header'
+import { Home } from './components/Acceuil/Home'
 import clsx from 'clsx'
-//import { Header } from './components/Header/Header'
+import './App.css'
 
-const Root = () => {
+const Root = (): React.JSX.Element => {
   return <>
     <Header/>
-    <div className={clsx("w-sreen h-[100%-80px]")}>
+    <div className={clsx("w-sreen h-[calc(100vh-80px)]")}>
       <Outlet/>
     </div>    
   </>
@@ -19,12 +19,16 @@ const router = createBrowserRouter([
     element: <Root/>,
     children: [
       {
-        path: "/nosProduits",
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "nosProduits",
         element: <p>Nos produits</p>
       },
     
       {
-        path: "/contacts",
+        path: "contact",
         element: <p>Nous contacter</p>
       }
     ]
