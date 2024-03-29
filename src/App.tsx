@@ -1,6 +1,7 @@
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Header } from './components/Header/Header'
-import { Home } from './components/Acceuil/Home'
+import { Home } from './components/Home/Home'
+import { Products } from './components/Products/Products'
 import clsx from 'clsx'
 import './App.css'
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "nosProduits",
-        element: <p>Nos produits</p>
+        element: <Products/>
       },
     
       {

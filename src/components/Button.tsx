@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react"
+import { clsx } from "clsx"
 
 type  ButtonType = {
     onClick?: () => void
@@ -10,7 +11,7 @@ export const Button: FunctionComponent<ButtonType> = ({onClick, className, child
     return (
         <button
             onClick={onClick} 
-            className={className}
+            className={clsx(className)}
         >
             {children}
         </button>

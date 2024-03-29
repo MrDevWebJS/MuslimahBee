@@ -2,6 +2,7 @@ import { clsx } from "clsx"
 import { navLinks } from "./data/navLink"
 import { open, closed } from "./data/navSvg"
 import { FunctionComponent, useState } from "react"
+import { Button } from "../Button"
 
 export const Nav: FunctionComponent = (): React.JSX.Element => {
 
@@ -16,15 +17,15 @@ export const Nav: FunctionComponent = (): React.JSX.Element => {
             className={clsx("w-1/2 h-full flex justify-end items-center")}
         >
 
-            <button
-                className={clsx(`
-                mr-2 cursor-pointer
+            <Button
+                className={`
+                w-11 h-11 flex justify-center items-center rounded-full hover:bg-pink-100 transition-colors transition-duration-300 mr-2 cursor-pointer
                 sm:hidden
-                `)}
+                `}
                 onClick={handleClick}
             >
                 {show ? closed.svg : open.svg}
-            </button>
+            </Button>
 
             <ul 
                 className={clsx(`
