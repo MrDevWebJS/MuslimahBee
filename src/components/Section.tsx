@@ -5,7 +5,7 @@ type SectionType = PropsWithChildren
 
 export const Section: FunctionComponent<SectionType> = ({children}): React.JSX.Element => {
     return(
-        <section className={clsx("flex flex-col justify-start items-center w-screen h-screen bg-pink-50 pt-24 p-4")}>
+        <section className={clsx("flex flex-col justify-start items-center w-screen h-[calc(100vh-80px)] bg-pink-50 pt-24 p-4")}>
             {children}
         </section>
     )

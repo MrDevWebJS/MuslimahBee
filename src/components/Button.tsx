@@ -4,7 +4,7 @@ import { clsx } from "clsx"
 type  ButtonType = {
     onClick?: () => void
     className: string
-    children?: React.JSX.Element
+    children?: React.JSX.Element | string
 }
 
 export const Button: FunctionComponent<ButtonType> = ({onClick, className, children}): React.JSX.Element => {

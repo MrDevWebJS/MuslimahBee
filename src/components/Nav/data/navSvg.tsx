@@ -1,6 +1,9 @@
+import clsx from "clsx"
+
     export const open = {
             svg: 
                 <svg
+                    className={clsx("fill-neutral-50")}
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
@@ -17,6 +20,7 @@
     export const closed = {
             svg: 
                 <svg
+                    className={clsx("fill-neutral-50")}
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
