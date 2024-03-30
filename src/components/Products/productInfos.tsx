@@ -1,11 +1,3 @@
-// type productInfosType = {
-//     id: number
-//     src: string
-//     productName: string
-//     category: string
-//     price: number
-// }
-
 export const productInfos = [
     {
         id: 10,
@@ -34,7 +26,7 @@ export const productInfos = [
     {
         id: 13,
         src: "../src/assets/images300x200/ensemblenourisson.webp",
-        productName: "Ensemble pour nourisson",
+        productName: "Ensemble nourisson",
         category: "lot",
         price: 30
     },
@@ -74,7 +66,7 @@ export const productInfos = [
     {
         id: 18,
         src: "../src/assets/images300x200/mretmmelapinou.webp",
-        productName: "Mr & Mme Lapinou",
+        productName: "Lapinou en couple",
         category: "lot",
         price: 35
     },
