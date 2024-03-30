@@ -3,14 +3,6 @@ import { productInfos } from "./productInfos"
 import { Button } from "../Button"
 import { FunctionComponent } from "react"
 
-type productInfos = {
-  id: number
-  src: string
-  productName: string
-  category: string
-  price: number
-}
-
 export const Gallery: FunctionComponent = (): React.JSX.Element => {
 
   return (
