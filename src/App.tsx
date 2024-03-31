@@ -2,6 +2,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Nav } from './components/Nav/Nav'
 import { Header } from './components/Header/Header'
 import { Gallery } from './components/Products/Gallery'
+import { SingleProduct } from './components/Products/SingleProduct'
 import clsx from 'clsx'
 import './App.css'
 
@@ -23,9 +24,20 @@ const router = createBrowserRouter([
         path: "/",
         element: <Header/>
       },
+      
       {
         path: "nosProduits",
-        element: <Gallery/>
+        children: [
+          {
+            path: "",
+            element: <Gallery/>
+          },
+
+          {
+            path: ":id",
+            element: <SingleProduct/>
+          }
+        ]
       },
     
       {

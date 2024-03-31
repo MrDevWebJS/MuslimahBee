@@ -1,8 +1,9 @@
 import { clsx } from "clsx"
 import { FunctionComponent } from "react";
 import { Button } from "../Button"
+import { NavLink } from "react-router-dom";
 
-type ProductCardType = {
+export type ProductCardType = {
     product: {
       id: number;
       src: string;
@@ -34,8 +35,15 @@ export const ProductCard: FunctionComponent<ProductCardType> = ({product}): Reac
                     catégorie: {product.category}
                 </p>
 
-                <Button className={"block bg-slate-700 font-cormorantGaramond font-bold text-xl text-slate-50 px-2 rounded border-2 border-slate-700 hover:bg-gray-300 hover:text-slate-900 hover:border-slate-700"}>
+                <Button 
+                    className={"block bg-slate-700 font-cormorantGaramond font-bold text-xl text-slate-50 rounded border-2 border-slate-700 hover:bg-gray-300 hover:text-slate-900 hover:border-slate-700"}
+                    >  
+                    <NavLink 
+                        className={clsx("w-full h-full px-2")}
+                        to={`/nosProduits/:${product.id}`}
+                    >
                     Voir
+                    </NavLink>
                 </Button>
             </div>
         </article>
