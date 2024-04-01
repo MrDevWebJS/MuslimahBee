@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react"
-import { Home } from "../Home/Home"
+import { Home } from "./Home"
 
 export const Header: FunctionComponent = (): React.JSX.Element => {
 
