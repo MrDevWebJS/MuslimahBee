@@ -1,13 +1,12 @@
 import { clsx } from "clsx"
 import { FunctionComponent } from "react"
 import { Button } from "../Button"
-import { Section } from "../Section"
 import { NavLink } from "react-router-dom"
 
 export const Home: FunctionComponent = (): React.JSX.Element => {
 
     return (
-        <Section>
+        <section className={clsx("flex flex-col justify-start items-center w-screen h-[calc(100vh-80px)] bg-pink-50 pt-24 p-4")}>
             <img 
                 src="../src/assets/images/logo/MB-logo-rouge.webp"
                 className={clsx("max-w-3/4 h-2/5 rounded-se-3xl rounded-es-3xl")}
@@ -28,6 +27,6 @@ export const Home: FunctionComponent = (): React.JSX.Element => {
                         Boutique
                     </NavLink>}
                 />
-        </Section>
+        </section>
     )
 }

@@ -1,6 +1,6 @@
 import { clsx } from "clsx"
 import { FunctionComponent } from "react"
-import { productInfos } from "./productInfos"
+import { productInfos } from "../../productInfos"
 import { ProductCard } from "./ProductCard"
 
 export const Gallery: FunctionComponent = (): React.JSX.Element => {

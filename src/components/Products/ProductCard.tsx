@@ -16,7 +16,7 @@ type ProductCardType = {
 export const ProductCard: FunctionComponent<ProductCardType> = ({product}): React.JSX.Element => {
 
     return (
-        <article className={clsx("m-10 p-1 bg-slate-50 rounded hover:shadow-[0_3px_3px_3px_rgba(0,0,0)] transition ease-in-out hover:-translate-y-5 hover:scale-105 duration-500")}>
+        <article className={clsx("m-4 p-1 bg-slate-50 rounded hover:shadow-[0_3px_3px_3px_rgba(0,0,0)] transition ease-in-out hover:-translate-y-5 hover:scale-105 duration-500")}>
             <img
                 className={"w-[350px] h-[250px] rounded"}        
                 key={product.id}

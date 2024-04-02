@@ -2,7 +2,7 @@ import { Root } from './Root'
 import { createBrowserRouter } from 'react-router-dom'
 import { Header } from '../Home/Header'
 import { Gallery } from '../Products/Gallery'
-import { SingleProduct } from '../Products/SingleProduct'
+import { SingleProduct } from '../../SingleProduct/SingleProduct'
 
 export const router = createBrowserRouter([
     {
